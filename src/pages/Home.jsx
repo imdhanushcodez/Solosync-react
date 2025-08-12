@@ -71,9 +71,9 @@ function Home() {
                   {/* finance over chart */}
 
                   <FinanceOverview
-                  totalIncome={DashboardData?.totalIncome}
-                  totalExpense={DashboardData?.totalExpense}
-                  totalBalance={DashboardData?.totalBalance}>
+                  totalIncome={DashboardData?.totalIncome || 1 }
+                  totalExpense={DashboardData?.totalExpense || 0}
+                  totalBalance={DashboardData?.totalBalance || 0} >
 
                   </FinanceOverview>
                   {/* Expense transactions */}
