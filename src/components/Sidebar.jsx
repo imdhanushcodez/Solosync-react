@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../context/AppContext'
-import { User } from 'lucide-react';
+import { Computer, Heart, User } from 'lucide-react';
 import { SIDE_BAR_DATA } from '../assets/assets';
-import { useNavigate } from 'react-router-dom';
+import { href, useNavigate } from 'react-router-dom';
+
 
 function Sidebar({activeMenu}) {
     const {user} = useContext(AppContext);
@@ -29,6 +30,15 @@ function Sidebar({activeMenu}) {
                 </button>
             ))
         }
+
+       < div className="w-full flex mt-20 justify-center items-center">
+            <a
+            href='https://dhanushsubramani.vercel.app/'
+            className="flex justify-center items-center gap-1 rounded-lg bg-purple-100 p-2 text-purple-600 mx-auto">
+                <Computer size={20}></Computer>
+                About 
+            </a>
+       </div>
 
     </div>
   )
