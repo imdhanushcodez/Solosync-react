@@ -8,4 +8,12 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+  server: {
+    proxy: {
+      '/api/v1.0': {
+        target: 'http://solosync.us-east-1.elasticbeanstalk.com',
+        changeOrigin: true,
+      }
+    }
+  }
 })

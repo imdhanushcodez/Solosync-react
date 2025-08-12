@@ -1,5 +1,6 @@
-export const BASE_URL = "//solosync.us-east-1.elasticbeanstalk.com/api/v1.0";
-//export const BASE_URL = "/api/v1.0";
+//export const BASE_URL = "//solosync.us-east-1.elasticbeanstalk.com/api/v1.0";
+export const BASE_URL = "/api/v1.0";
+//export const BASE_URL = "http://localhost:5000/api/v1.0";
 
 
 export const API_ENDPOINTS = {
